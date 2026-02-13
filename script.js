@@ -1,18 +1,18 @@
 const CONFIG = {
   // Customize these 👇
   yourName: "Me",
-  partnerName: "My Love",
+  partnerName: "Aliya (My Princess)",
   kissText: "MWAH! Million kisses for you 💋",
   sweetLines: [
     "You’re my favorite place to be. 💗",
     "If kisses were stars, I’d give you a galaxy. ✨",
-    "I don’t want perfect— I want you. 🌙",
+    "I wanted good in life - I found PERFECTTTTT. 🌙",
     "One kiss, and my day is complete. 💞",
     "You make everything feel soft and safe. 🤍"
   ],
   questions: [
     "Can I steal one sweet kiss today? 💞",
-    "Okay… how about a warm forehead kiss? 🥺",
+    "Okay… how about a forehead kiss? 🥺",
     "Last one… can I keep kissing you forever? 💖"
   ]
 };
