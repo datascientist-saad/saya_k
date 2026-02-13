@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiss Day 💋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Soft gradient + floating lights -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="noise"></div>
+  </div>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="badge">
+        <span class="dot"></span>
+        <span>Kiss Day Special</span>
+      </div>
+
+      <button class="mute" id="muteBtn" aria-label="Toggle sound">
+        <span id="muteIcon">🔊</span>
+      </button>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <div class="shine"></div>
+
+      <div class="hero">
+        <div class="lipmark" aria-hidden="true">💋</div>
+        <h1>Kiss Day</h1>
+        <p class="sub">
+          A small moment. A big feeling. <br />
+          For the person who makes my heart softer.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="content">
+        <h2 id="questionTitle">One question for you…</h2>
+        <p class="question" id="questionText">
+          Can I steal one sweet kiss today? 💞
+        </p>
+
+        <div class="actions" id="actions">
+          <button class="btn primary" id="yesBtn">Yes 💖</button>
+          <button class="btn ghost" id="noBtn">Not yet 🙈</button>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+          <span class="pill active"></span>
+          <span class="pill"></span>
+          <span class="pill"></span>
+        </div>
+
+        <div class="note" id="note">
+          Tip: tap “Yes” if you want to unlock the surprise ✨
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>Made with love</span>
+        <span class="sep">•</span>
+        <span id="dateText"></span>
+      </footer>
+    </section>
+
+    <section class="small">
+      <p>
+        Want to customize names/messages? Open <span class="mono">script.js</span> and edit the <span class="mono">CONFIG</span>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-card">
+      <div class="modal-top">
+        <div class="mini-badge">Unlocked 💎</div>
+        <button class="close" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <h3 id="modalTitle">Come closer…</h3>
+      <p id="modalBody">
+        I’d choose you in every lifetime. <br />
+        One kiss, and the world goes quiet. 💋
+      </p>
+
+      <div class="modal-actions">
+        <button class="btn primary" id="kissBtn">Send a Kiss 💋</button>
+        <button class="btn ghost" id="sweetBtn">Say Something Sweet 🌹</button>
+      </div>
+
+      <div class="sweet" id="sweetLine" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Kiss overlay -->
+  <div class="kiss-overlay" id="kissOverlay" aria-hidden="true">
+    <div class="kiss-center">
+      <div class="kiss-icon">💋</div>
+      <div class="kiss-text" id="kissText">MWAH!</div>
+      <button class="btn ghost" id="overlayClose">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
